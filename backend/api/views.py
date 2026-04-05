@@ -9,15 +9,21 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 @api_view(["POST"])
 def explain_code(request):
     code = request.data.get("code")
+    mode = request.data.get("mode", "explain")
     if not code:
         return Response({"error": "Please provide code to explain."}, status=400)
+    
+    if mode == "explain":
+        prompt = f"Explain the following code clearly and concisely:\n\n{code}"
+    else:
+        prompt = f"Debug the following code. Identify bugs, errors, and issues, and suggest fixes:\n\n{code}"
 
-    config = types.GenerateContentConfig(system_instruction="You are a professional coding tutor. explain the code clearly.")
+    config = types.GenerateContentConfig(system_instruction="You are a friendly coder. explain neat, brief and crisp")
 
     try:
         response = client.models.generate_content(
             model="gemini-2.5-flash", 
-            contents=code,
+            contents=prompt,
             config=config
         )
 
