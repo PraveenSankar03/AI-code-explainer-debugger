@@ -1,112 +1,75 @@
-#  AI Code Explainer & Debugger
+# CodeInsight — AI Code Assistant
 
-> Understand code. Fix bugs. Move faster.
+> Write. Explain. Debug. Powered by Gemini 2.5 Flash.
 
-A full-stack Django + React application powered by Google Gemini (2.5 Flash) that delivers instant code explanations and debugging insights.
-
----
-
-##  What This Does
-
-Paste any code snippet and get:
-
--  Clear, human-readable explanations  
--  Smart debugging insights  
--  Fast responses (under 5 seconds)  
-
-No more wasting time tracing complex logic manually.
+A full-stack React + Django application that gives developers a tri-mode AI tool — generate code from a prompt, understand unfamiliar logic instantly, or surface bugs and fixes in seconds.
 
 ---
 
-##  Features
+## What It Does
 
--  AI-powered code explanation  
--  Built-in debugging + issue detection  
--  Suggests improvements & edge cases  
--  Supports multiple languages (Python, JS, C++, etc.)  
--  Minimal, fast React UI  
+Three modes. One interface. No friction.
 
----
-
-##  Tech Stack
-
-**Frontend**
-- React.js  
-- JavaScript  
-- CSS  
-
-**Backend**
-- Django  
-- Django REST Framework  
-- Python  
-
-**AI Layer**
-- Google Gemini API (gemini-2.5-flash)
+| Mode | Input | Output |
+|------|-------|--------|
+| **Write** | Describe what you need | Working code, generated instantly |
+| **Explain** | Paste any code | Line-by-line breakdown of logic and intent |
+| **Debug** | Paste broken code | Bug identified, fix surfaced |
 
 ---
 
-##  Quick Setup
+## Tech Stack
 
-### 1️⃣ Clone
-git clone https://github.com/PraveenSankar03/AI-code-explainer-debugger.git  
-
-### 2️⃣ Backend
-cd backend  
-pip install -r requirements.txt  
-python manage.py runserver  
-
-### 3️⃣ Frontend
-cd frontend  
-npm install  
-npm start  
+| Layer | Tech |
+|-------|------|
+| Frontend | React.js, JavaScript, CSS |
+| Backend | Django, Django REST Framework, Python |
+| AI | Google Gemini API (gemini-2.5-flash) |
 
 ---
 
-##  Environment Variables
+## Quick Setup
 
-Create file:
-backend/.env  
+**1. Clone**
+```bash
+git clone https://github.com/PraveenSankar03/AI-code-explainer-debugger.git
+```
 
-Add:
-GEMINI_API_KEY=your_api_key  
+**2. Backend**
+```bash
+cd backend
+pip install -r requirements.txt
+python manage.py runserver
+```
 
----
+**3. Frontend**
+```bash
+cd frontend
+npm install
+npm start
+```
 
-##  Note on Usage
+**4. Environment**
 
-This project uses Gemini 2.5 Flash (free tier):
-
-- Strict rate limits  
-- Possible temporary request failures on heavy usage  
-- Use responsibly  
-
----
-
-##  Ideal For
-
-- Developers learning new codebases  
-- Debugging unfamiliar logic  
-- Understanding complex functions quickly  
-- Reducing onboarding time  
-
----
-
-##  Future Enhancements
-
--  Streaming AI responses  
--  Syntax highlighting + inline comments  
--  Multi-file analysis  
--  Local LLM (offline mode)  
+Create `backend/.env` and add:
+```
+GEMINI_API_KEY=your_api_key_here
+```
 
 ---
 
-##  Author
+## Rate Limits
 
-Praveen Kumar S  
-Full Stack Developer | AI Engineer  
+Runs on Gemini 2.5 Flash free tier — RPM, RPD, and TPM quotas apply.
+If a request fails, wait a moment and retry. Use responsibly.
 
 ---
 
-##  If you like this project
+## Author
 
-Give it a star ⭐
+**Praveen Kumar S** — Full Stack Developer, Chennai
+[GitHub](https://github.com/PraveenSankar03) · [LinkedIn](https://www.linkedin.com/in/praveen-kumar-40109b366/) · [Portfolio](https://portfolio-praveen03.vercel.app/)
+
+---
+
+⭐ Star this repo if it saved you time.
