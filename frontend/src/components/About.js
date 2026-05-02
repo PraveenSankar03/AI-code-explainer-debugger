@@ -67,13 +67,13 @@ const About = () => {
       <section>
         <h2>Built By</h2>
         <p>
-          Praveen Kumar S — Full Stack Developer, Chennai. Built with React,
+          Praveen Kumar S — Software Engineer, Chennai. Built with React,
           Django, and Gemini 2.5 Flash. This is one of the two AI projects I've
           shipped — the other one is a fully offline local LLM assistant.
         </p>
         <p>
-          If you're a recruiter or developer — my GitHub and portfolio are
-          linked in the nav.
+          If you're a recruiter or developer — my GitHub and Portfolio are
+          linked in the navbar.
         </p>
       </section>
 

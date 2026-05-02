@@ -50,7 +50,7 @@ const Home = () => {
 
   return (
     <div className="app">
-      <h1 className="title">AI powered coding assistant</h1>
+      <h1 className="title">AI Coding Intelligence Studio</h1>
 
       <div className="toggle-group">
         {["Write", "Explain", "Debug"].map((m) => (
